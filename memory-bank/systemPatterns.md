@@ -6,7 +6,7 @@
 *   It leverages the `ModelContextProtocol` client library to handle communication with MCP servers.
 
 **Key Technical Decisions & Patterns:**
-*   **MCP Communication:** Uses the Server-Sent Events (SSE) protocol via `SseClientTransport` from the `ModelContextProtocol` library for efficient, server-pushed communication.
+*   **MCP Communication:** Uses the `ModelContextProtocol` library (specifically `SseClientTransport`) to handle communication with remote MCP servers.
 *   **Interface Definition:** The `InterfaceMCPClient.cs` file defines the contract exposed to OutSystems, using attributes like `[OSInterface]`, `[OSAction]`, and `[OSParameter]` for discoverability and documentation within the OutSystems IDE.
 *   **Implementation Separation:** The `ActionsMCPClient.cs` class implements the defined interface, encapsulating the logic for connecting to the MCP server, calling tools, and handling results.
 *   **Custom Structures:** The `StructuresMCPClient.cs` file defines custom data structures (e.g., `ToolArgument`) needed for action parameters, using `[OSStructure]` and `[OSStructureField]` attributes.

@@ -3,7 +3,7 @@
 **Current Status:** The core .NET External Library (`MCPClient`) is largely complete and documented.
 
 **What Works:**
-*   Connection to MCP servers via SSE.
+*   Connection to MCP remote servers.
 *   Retrieval of tool lists (`GetTools` action).
 *   Invocation of tools (`CallTool` action).
 *   Runtime type conversion for `CallTool` arguments (boolean, integer, decimal, date/datetime).
@@ -27,5 +27,5 @@
 **Decisions Log:**
 *   Switched from initial README-based documentation to embedding documentation in C# attributes for better OutSystems integration.
 *   Added explicit `Type` field to `ToolArgument` to handle runtime type conversion, rather than relying solely on string values.
-*   Confirmed SSE as the target communication protocol.
+*   Confirmed communication with remote MCP servers as the target interaction method.
 *   Used standard embedded resource mechanism for the library icon.

@@ -6,7 +6,7 @@
 *   Added a `Type` field to the `ToolArgument` structure to support runtime type conversion.
 *   Modified the `CallTool` action implementation (`ActionsMCPClient.cs`) to parse the `Value` field based on the `Type` field (handling boolean, integer, decimal, date/datetime).
 *   Added comprehensive documentation to the C# code using OutSystems SDK attributes (`[OSInterface]`, `[OSAction]`, `[OSParameter]`, `[OSStructure]`, `[OSStructureField]`).
-*   Updated documentation to explicitly mention the use of the Server-Sent Events (SSE) protocol.
+*   Updated documentation to refer to communication with remote MCP servers.
 *   Created a `README.md` file summarizing the library's functionality and build process.
 *   Embedded an icon (`182288589.png`) into the project for use in OutSystems.
 *   Drafted descriptions for a conceptual OutSystems wrapper library ("MCP Client Library") and its actions (`CallMCPTool`, `CallMCPTool_AgentBuilder`, `GetMCPTools`, `MCPTools_FormatToAgentBuilder`), including specific considerations for AI Agent Builder integration.
@@ -18,6 +18,6 @@
 
 **Key Patterns/Preferences:**
 *   Documentation should be embedded within the C# code using SDK attributes for optimal OutSystems integration.
-*   The library specifically targets MCP communication via SSE.
+*   The library facilitates MCP communication with remote servers.
 *   Argument type handling is crucial for robust tool calls.
 *   Clear distinction between the core external library (.NET code) and any OutSystems wrapper library.

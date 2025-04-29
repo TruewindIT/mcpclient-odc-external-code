@@ -6,7 +6,7 @@
 
 **Key Dependencies:**
 *   **`OutSystems.ExternalLibraries.SDK` (v1.4.0):** Provides the necessary attributes (`[OSInterface]`, `[OSAction]`, etc.) and base types for creating OutSystems External Libraries.
-*   **`ModelContextProtocol` (v0.1.0-preview.8):** The client library used for handling MCP communication, specifically the `SseClientTransport` for Server-Sent Events.
+*   **`ModelContextProtocol` (v0.1.0-preview.8):** The client library used for handling MCP communication with remote servers (utilizing `SseClientTransport`).
 
 **Development Environment:**
 *   Assumed to be Visual Studio or VS Code with .NET SDK installed.

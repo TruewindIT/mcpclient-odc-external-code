@@ -1,6 +1,6 @@
-# MCPClient External Library for OutSystems (SSE Protocol)
+# MCPClient External Library for OutSystems
 
-Provides actions to interact with Model Context Protocol (MCP) servers using the **Server-Sent Events (SSE)** protocol. Allows OutSystems applications to call tools and retrieve information from connected MCP SSE endpoints.
+Provides actions to interact with Model Context Protocol (MCP) remote servers. Allows OutSystems applications to call tools and retrieve information from connected MCP server endpoints.
 
 ## Actions
 
@@ -10,7 +10,7 @@ Calls a specific tool exposed by a connected MCP server.
 
 **Parameters:**
 
-*   `ServerUrl` (Text): The **SSE endpoint URL** of the target MCP server (e.g., `http://localhost:8888/sse`).
+*   `ServerUrl` (Text): The endpoint URL of the target MCP server (e.g., `http://localhost:8888/sse`).
 *   `ToolArguments` (List of ToolArgument Structure): A list of arguments required by the tool. See the `ToolArgument` structure definition below.
 *   `ToolName` (Text): The name of the tool to execute on the MCP server.
 
@@ -24,7 +24,7 @@ Retrieves a list of available tools from a connected MCP server.
 
 **Parameters:**
 
-*   `ServerUrl` (Text): The **SSE endpoint URL** of the target MCP server (e.g., `http://localhost:8888/sse`).
+*   `ServerUrl` (Text): The endpoint URL of the target MCP server (e.g., `http://localhost:8888/sse`).
 
 **Returns:**
 
